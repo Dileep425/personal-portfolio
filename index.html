@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <canvas class="starfield" aria-hidden="true"></canvas>
+  <div class="cosmic-noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
   <div class="site-shell">
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Dileep Borugula home">
@@ -23,17 +26,15 @@
         <a href="#toolkit">Toolkit</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
-        <span aria-hidden="true">◐</span>
-      </button>
+      <a class="nav-cta" href="#contact">Contact</a>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Open to the next chapter</p>
-          <h1>Building a career<br><em>with intention.</em></h1>
-          <p class="hero-text">I’m Dileep, a software engineer and technical lead moving toward the intersection of great products, emerging technology and meaningful work.</p>
+          <p class="eyebrow"><span class="status-dot"></span> Signal open: next chapter</p>
+          <h1>Changing orbit,<br><em>building what's next.</em></h1>
+          <p class="hero-text">I’m Dileep, a software engineer and technical lead moving toward the intersection of great products, emerging technology, AI exploration and meaningful work.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#contact">Let's connect <span>↗</span></a>
             <a class="button button-quiet" href="#story">Read my story <span>↓</span></a>
@@ -45,27 +46,30 @@
           </div>
         </div>
         <div class="hero-art" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="orb orb-main"><span>curious<br>by design</span></div>
-          <div class="orb orb-small orb-small-one"></div>
-          <div class="orb orb-small orb-small-two"></div>
+          <div class="scan-ring scan-ring-one"></div>
+          <div class="scan-ring scan-ring-two"></div>
+          <div class="orbit orbit-one"><span></span></div>
+          <div class="orbit orbit-two"><span></span></div>
+          <div class="planet planet-main"><span>curious<br>by design</span></div>
+          <div class="moon moon-one"></div>
+          <div class="moon moon-two"></div>
           <div class="code-card">
-            <span class="code-line"><b>01</b> build_with_purpose()</span>
-            <span class="code-line"><b>02</b> learn_every_day()</span>
-            <span class="code-line"><b>03</b> explore_ai()</span>
+            <span class="code-line"><b>01</b> launch_with_purpose()</span>
+            <span class="code-line"><b>02</b> learn_new_systems()</span>
+            <span class="code-line"><b>03</b> explore_ai_frontiers()</span>
           </div>
         </div>
       </section>
 
       <section class="marquee" aria-label="Areas of interest">
         <div class="marquee-track">
-          <span>SOFTWARE ENGINEERING</span><i>✳</i><span>PRODUCT THINKING</span><i>✳</i><span>AI EXPLORATION</span><i>✳</i><span>CONTINUOUS LEARNING</span><i>✳</i>
-          <span>SOFTWARE ENGINEERING</span><i>✳</i><span>PRODUCT THINKING</span><i>✳</i><span>AI EXPLORATION</span><i>✳</i><span>CONTINUOUS LEARNING</span><i>✳</i>
+          <span>SOFTWARE ENGINEERING</span><i>✦</i><span>CAREER TRANSITION</span><i>✦</i><span>AI EXPLORATION</span><i>✦</i><span>CONTINUOUS LEARNING</span><i>✦</i>
+          <span>SOFTWARE ENGINEERING</span><i>✦</i><span>CAREER TRANSITION</span><i>✦</i><span>AI EXPLORATION</span><i>✦</i><span>CONTINUOUS LEARNING</span><i>✦</i>
         </div>
       </section>
 
       <section class="section story-grid" id="story">
+        <div class="section-orb" aria-hidden="true"></div>
         <div class="section-label">01 / The story</div>
         <div class="story-content">
           <p class="kicker">A career change is a direction, not a reset.</p>
@@ -82,6 +86,7 @@
       </section>
 
       <section class="section experience-section" id="experience">
+        <div class="section-orb" aria-hidden="true"></div>
         <div class="section-label">02 / Selected experience</div>
         <div class="experience-content">
           <div class="experience-intro">
@@ -106,6 +111,7 @@
       </section>
 
       <section class="section toolkit-section" id="toolkit">
+        <div class="section-orb" aria-hidden="true"></div>
         <div class="section-label">03 / The toolkit</div>
         <div class="toolkit-content">
           <p class="kicker">What I bring to the table</p>
